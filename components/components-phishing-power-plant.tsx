@@ -334,7 +334,7 @@ export function PhishingPowerPlantComponent() {
             disabled={currentScenario === 0}
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full disabled:opacity-50"
           >
-            Previous Scenario
+            Previous Challenge
           </button>
           <div>
             Scenario {currentScenario + 1} of {scenarios.length}
@@ -344,7 +344,7 @@ export function PhishingPowerPlantComponent() {
               onClick={nextScenario}
               className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full"
             >
-              Next Scenario
+              Next Challenge
             </button>
           ) : (
             <button
