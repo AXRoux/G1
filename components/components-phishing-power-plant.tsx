@@ -195,15 +195,13 @@ export function PhishingPowerPlantComponent() {
   const [selectedOption, setSelectedOption] = useState<number | null>(null)
   const [showExplanation, setShowExplanation] = useState(false)
   const [score, setScore] = useState(0)
-  const [correctOption, setCorrectOption] = useState<number | null>(null)
   const router = useRouter()
 
   const handleOptionSelect = (optionIndex: number) => {
     setSelectedOption(optionIndex)
     setShowExplanation(true)
-    setCorrectOption(scenarios[currentScenario].correctOption)
     if (optionIndex === scenarios[currentScenario].correctOption) {
-      setScore(score + 1)
+      setScore(prevScore => prevScore + 1)
     }
   }
 
@@ -211,7 +209,6 @@ export function PhishingPowerPlantComponent() {
     if (currentScenario < scenarios.length - 1) {
       setCurrentScenario(currentScenario + 1)
       setSelectedOption(null)
-      setCorrectOption(null)
       setShowExplanation(false)
     }
   }
@@ -220,7 +217,6 @@ export function PhishingPowerPlantComponent() {
     if (currentScenario > 0) {
       setCurrentScenario(currentScenario - 1)
       setSelectedOption(null)
-      setCorrectOption(null)
       setShowExplanation(false)
     }
   }
@@ -228,7 +224,6 @@ export function PhishingPowerPlantComponent() {
   const resetGame = () => {
     setCurrentScenario(0)
     setSelectedOption(null)
-    setCorrectOption(null)
     setShowExplanation(false)
     setScore(0)
   }
@@ -287,7 +282,7 @@ export function PhishingPowerPlantComponent() {
                   disabled={showExplanation}
                   className={`w-full text-left p-3 rounded-lg transition-colors ${
                     showExplanation
-                      ? index === correctOption
+                      ? index === scenarios[currentScenario].correctOption
                         ? 'bg-green-600 text-white'
                         : index === selectedOption
                         ? 'bg-red-600 text-white'
