@@ -117,15 +117,15 @@ const CookieStealerChallenge = ({ onCorrectAnswer }: { onCorrectAnswer: () => vo
               key={index}
               onClick={() => handleAnswer(index)}
               className={`w-full text-left p-3 rounded-lg transition-colors ${
-                selectedAnswer === index
+                selectedAnswer !== null
                   ? index === correctAnswer
                     ? 'bg-green-600 text-white'
-                    : 'bg-red-600 text-white'
-                  : selectedAnswer !== null && index === correctAnswer
-                  ? 'bg-green-600 text-white'
-                  : 'bg-gray-700 hover:bg-gray-600'
-              }`}
-              disabled={showExplanation}
+                    : index === selectedAnswer
+                    ? 'bg-red-600 text-white'
+                    : 'bg-gray-700 text-white'
+                  : 'bg-gray-700 hover:bg-gray-600 text-white'
+              } ${selectedAnswer !== null ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+              disabled={selectedAnswer !== null}
             >
               {option}
             </button>
@@ -269,15 +269,15 @@ const AIPrivacyChallenge = ({ onCorrectAnswer }: { onCorrectAnswer: () => void }
               key={index}
               onClick={() => handleAnswer(index)}
               className={`w-full text-left p-3 rounded-lg transition-colors ${
-                selectedAnswer === index
+                selectedAnswer !== null
                   ? index === correctAnswer
                     ? 'bg-green-600 text-white'
-                    : 'bg-red-600 text-white'
-                  : selectedAnswer !== null && index === correctAnswer
-                  ? 'bg-green-600 text-white'
-                  : 'bg-gray-700 hover:bg-gray-600'
-              }`}
-              disabled={showExplanation}
+                    : index === selectedAnswer
+                    ? 'bg-red-600 text-white'
+                    : 'bg-gray-700 text-white'
+                  : 'bg-gray-700 hover:bg-gray-600 text-white'
+              } ${selectedAnswer !== null ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+              disabled={selectedAnswer !== null}
             >
               {option}
             </button>
@@ -407,15 +407,15 @@ const PasswordStrengthChallenge = ({ onCorrectAnswer }: { onCorrectAnswer: () =>
               key={index}
               onClick={() => handleAnswer(index)}
               className={`w-full text-left p-3 rounded-lg transition-colors ${
-                selectedAnswer === index
+                selectedAnswer !== null
                   ? index === correctAnswer
                     ? 'bg-green-600 text-white'
-                    : 'bg-red-600 text-white'
-                  : selectedAnswer !== null && index === correctAnswer
-                  ? 'bg-green-600 text-white'
-                  : 'bg-gray-700 hover:bg-gray-600'
-              }`}
-              disabled={showExplanation}
+                    : index === selectedAnswer
+                    ? 'bg-red-600 text-white'
+                    : 'bg-gray-700 text-white'
+                  : 'bg-gray-700 hover:bg-gray-600 text-white'
+              } ${selectedAnswer !== null ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+              disabled={selectedAnswer !== null}
             >
               {option}
             </button>
@@ -513,15 +513,15 @@ const PhishingEmailChallenge = ({ onCorrectAnswer }: { onCorrectAnswer: () => vo
             key={index}
             onClick={() => handleAnswer(index)}
             className={`w-full text-left p-3 rounded-lg transition-colors ${
-              selectedAnswer === index
+              selectedAnswer !== null
                 ? index === correctAnswer
                   ? 'bg-green-600 text-white'
-                  : 'bg-red-600 text-white'
-                : selectedAnswer !== null && index === correctAnswer
-                ? 'bg-green-600 text-white'
-                : 'bg-gray-700 hover:bg-gray-600'
-            }`}
-            disabled={showExplanation}
+                  : index === selectedAnswer
+                  ? 'bg-red-600 text-white'
+                  : 'bg-gray-700 text-white'
+                : 'bg-gray-700 hover:bg-gray-600 text-white'
+            } ${selectedAnswer !== null ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+            disabled={selectedAnswer !== null}
           >
             {option}
           </button>
@@ -775,15 +775,15 @@ const UnauthorizedWifiChallenge = ({ onCorrectAnswer }: { onCorrectAnswer: () =>
               key={index}
               onClick={() => handleAnswer(index)}
               className={`w-full text-left p-4 rounded-lg transition-colors duration-300 ${
-                selectedAnswer === index
+                selectedAnswer !== null
                   ? index === correctAnswer
                     ? 'bg-green-600 text-white'
-                    : 'bg-red-600 text-white'
-                  : selectedAnswer !== null && index === correctAnswer
-                  ? 'bg-green-600 text-white'
-                  : 'bg-gray-700 hover:bg-gray-600'
-              }`}
-              disabled={showExplanation}
+                    : index === selectedAnswer
+                    ? 'bg-red-600 text-white'
+                    : 'bg-gray-700 text-white'
+                  : 'bg-gray-700 hover:bg-gray-600 text-white'
+              } ${selectedAnswer !== null ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+              disabled={selectedAnswer !== null}
             >
               {option}
             </button>

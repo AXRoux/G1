@@ -281,14 +281,14 @@ export function PhishingPowerPlantComponent() {
                   onClick={() => handleOptionSelect(index)}
                   disabled={showExplanation}
                   className={`w-full text-left p-3 rounded-lg transition-colors ${
-                    showExplanation
+                    selectedOption !== null
                       ? index === scenarios[currentScenario].correctOption
                         ? 'bg-green-600 text-white'
                         : index === selectedOption
                         ? 'bg-red-600 text-white'
                         : 'bg-gray-700 text-white'
                       : 'bg-gray-700 hover:bg-gray-600 text-white'
-                  } ${showExplanation ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+                  } ${selectedOption !== null ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                 >
                   {option}
                 </button>
