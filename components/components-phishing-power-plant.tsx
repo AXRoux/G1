@@ -18,7 +18,7 @@ type Scenario = {
 const scenarios: Scenario[] = [
   {
     id: 1,
-    title: "Urgent Email from CEO",
+    title: "Urgent Email from President",
     type: 'email',
     content: (
       <div className="bg-white text-black p-4 rounded-lg shadow-md max-w-2xl mx-auto">
@@ -37,7 +37,7 @@ const scenarios: Scenario[] = [
           <p className="mt-2">This is extremely time-sensitive and must be done today. Due to the confidential nature of this acquisition, please do not discuss this with anyone else in the company.</p>
           <p className="mt-2">I'm currently in a meeting but will be available on my cell if you have any questions.</p>
           <p className="mt-2">Thank you for your prompt attention to this matter.</p>
-          <p className="mt-2">Best regards,<br />Davie McGregor<br />CEO, Grand Bahama Power Company</p>
+          <p className="mt-2">Best regards,<br />Davie McGregor<br />President, Grand Bahama Power Company</p>
         </div>
       </div>
     ),
