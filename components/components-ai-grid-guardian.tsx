@@ -578,11 +578,11 @@ const UnauthorizedWifiChallenge = ({ onCorrectAnswer }: { onCorrectAnswer: () =>
   const options = [
     "Using a personal smartphone's hotspot to access work emails",
     "Connecting a company laptop to the official, secure company network",
-    "Bringing a personal MiFi device to access internet in remote substations",
+    "Bringing a personal MiFi device to access internet in the workplace",
     "Using a company-provided tablet on the guest WiFi network"
   ]
   const correctAnswer = 2
-  const explanation = "Bringing a personal MiFi device to remote substations poses the greatest risk. These unauthorized devices can create unsecured entry points into critical infrastructure networks. They bypass company security measures, potentially allowing attackers to intercept sensitive data or gain access to SCADA systems. Company-provided devices and networks have security measures in place, while personal devices, especially in sensitive locations like substations, can compromise the entire grid's security."
+  const explanation = "Bringing a personal MiFi device to the workplace poses the greatest risk. These unauthorized devices can create unsecured entry points into critical infrastructure networks. They bypass company security measures, potentially allowing attackers to intercept sensitive data or gain access to SCADA systems. Company-provided devices and networks have security measures in place, while personal devices, especially in sensitive locations like power plants and financial areas, can compromise the entire grid's security."
 
   useEffect(() => {
     let interval: NodeJS.Timeout
