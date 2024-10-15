@@ -19,15 +19,15 @@ const CookieStealerChallenge = ({ onCorrectAnswer }: { onCorrectAnswer: () => vo
   const [showExplanation, setShowExplanation] = useState(false)
   const [currentStep, setCurrentStep] = useState(0)
 
-  const question = "Why is it important to clear browser cookies regularly?"
+  const question = "What's the most effective strategy to protect against cookie-based attacks?"
   const options = [
-    "To free up storage space on your device",
-    "To improve website loading speed",
-    "To protect your privacy and security",
-    "To reset your browser settings"
+    "Use incognito mode for all browsing sessions",
+    "Regularly clear cookies and use browser privacy settings",
+    "Disable JavaScript in your browser",
+    "Only visit HTTPS websites"
   ]
-  const correctAnswer = 2
-  const explanation = "Regularly clearing cookies is important for privacy and security. It helps prevent unauthorized access to your accounts, removes tracking data that websites have collected about your browsing habits, and reduces the risk of your personal information being compromised if your device is accessed by others or if a website you've logged into is hacked."
+  const correctAnswer = 1
+  const explanation = "Regularly clearing cookies and using browser privacy settings is the most effective strategy. This practice removes potentially compromised cookies, limiting the window of opportunity for attackers. It also allows you to customize which cookies to keep or delete. Browser privacy settings can help block third-party cookies and tracking. Incognito mode doesn't protect against all cookie-based attacks and is impractical for regular use. Disabling JavaScript would break many websites. HTTPS is important for security but doesn't directly address cookie vulnerabilities. Regular cookie clearing, combined with privacy settings, provides a balanced approach to security and usability."
 
   const infectionSteps = [
     { icon: Download, description: "Malware Download" },
