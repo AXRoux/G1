@@ -80,7 +80,7 @@ function GameCard({ title, description, icon, game, onGameSelect }: { title: str
         onClick={() => onGameSelect(game)}
         className="bg-blue-700 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300"
       >
-        Start Challenge
+        Start IceBreaker
       </button>
     </motion.div>
   )

@@ -323,7 +323,7 @@ const PasswordStrengthChallenge = ({ onCorrectAnswer }: { onCorrectAnswer: () =>
     "ILoveMyCat123!",
     "P@ssw0rd2023",
     "Tr0ub4dor&3xtra_S3cur3",
-    "MyS3cureP@ssw0rd!2023"
+    "MyS3curePassw0rd2023"
   ]
   const correctAnswer = 2
   const explanation = "The most secure password is 'Tr0ub4dor&3xtra_S3cur3' because it's the longest, combines uppercase and lowercase letters, numbers, and special characters, and doesn't use common words or patterns. It's more resistant to brute-force attacks due to its length and complexity."

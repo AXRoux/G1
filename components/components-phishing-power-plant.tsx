@@ -64,7 +64,7 @@ const scenarios: Scenario[] = [
         <div className="p-4">
           <h3 className="font-bold mb-2">IT Support</h3>
           <div className="space-y-2">
-            <p className="bg-blue-100 p-2 rounded-lg"><strong>IT Support:</strong> "Hello, this is Mike from IT support. We've detected a critical security issue with your computer that needs immediate attention."</p>
+            <p className="bg-blue-100 p-2 rounded-lg"><strong>IT Support:</strong> "Hello, this is Jamal from IT. We've detected a critical security issue with your computer that needs immediate attention."</p>
             <p className="bg-green-100 p-2 rounded-lg"><strong>You:</strong> "Oh, I see. What kind of security issue?"</p>
             <p className="bg-blue-100 p-2 rounded-lg"><strong>IT Support:</strong> "We've identified a potential malware infection that's trying to access sensitive company data. To fix this, we need to remotely access your computer, but first, I'll need your login credentials to verify your identity and initiate the repair process."</p>
             <p className="bg-green-100 p-2 rounded-lg"><strong>You:</strong> "My login credentials? Is that really necessary?"</p>
@@ -123,7 +123,7 @@ const scenarios: Scenario[] = [
     ),
     options: [
       "Enter your credentials and log in to access the training",
-      "Close the website and report it as a potential phishing attempt",
+      "Close the website and report it",
       "Contact IT security to verify the authenticity of the training portal",
       "Share the link with colleagues to see if they received the same email"
     ],
@@ -183,7 +183,7 @@ const scenarios: Scenario[] = [
       "Click the link and update your details as requested",
       "Ignore the message and delete it",
       "Reply asking for more information about the update process",
-      "Report the message as a potential spam or phishing attempt without clicking the link"
+      "Report the message without clicking the link"
     ],
     correctOption: 3,
     explanation: "Unexpected SMS messages asking you to click links or provide personal information are often phishing attempts. The correct action is to report the message as suspicious without clicking any links or responding to it."
